@@ -1,9 +1,16 @@
 import '../css/index.css';
-import text from './test.js';
-text();
+import search from './search.js';
+import render from './render.js';
 
-if (module.hot) {
-    module.hot.accept('./test.js', function () {
-        text()
+const id = prompt('Quien es ese pokemon?');
+
+search(id)
+    .then((data)=>{
+        render(data)
     })
-};
+    .catch(()=>{
+        alert("No existe ese pokemon");
+        
+    })
+
+

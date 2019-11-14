@@ -25,10 +25,10 @@ module.exports = {
         filename: 'js/[name].js',
     },
     //asi se 'activa' el plugin HotModuleReplacement
-    devServer: {
-        hot: true, //configuracion
-        open: true  //abre una nueva pestaña cuando corremos el comando
-    },
+    //devServer: {
+        //hot: true, //configuracion
+        //open: true  //abre una nueva pestaña cuando corremos el comando
+    //},
     //como agregamos loaders
     module: {
         rules: [
@@ -64,7 +64,7 @@ module.exports = {
         //new = cree un archivo html
         new HtmlWebpackPlugin({
             //le pasamos atributos html
-            title: 'Plugins'
+            title: 'webpack'
         })
         //new = cree un archivo css
         //new MiniCssExtractPlugin({ //Lo quito porque para HotModuleReplacement es mejor, es mas rapido
