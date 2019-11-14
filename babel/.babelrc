@@ -1,0 +1,7 @@
+{
+    "presets": [
+        "@babel/preset-env" //lo colocare igual al nombre que haya en el package.json
+                            //para instalar dependencias de babel se utiliza el @
+                            //ejm npm install --save-dev @babel/core
+    ]
+}
